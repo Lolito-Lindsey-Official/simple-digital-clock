@@ -7,7 +7,7 @@ function cycleClock() {
         const minuteTime = String(nowTime.getMinutes()).padStart(2, '0');
         const secondTime =String(nowTime.getSeconds()).padStart(2, '0');
         // Make a string to display the HH:MM:SS model
-        const timeString = `${hourTime}:${minuteTime}:${secondTime}`;
+        const timeString = `The current time is:  ${hourTime}:${minuteTime}:${secondTime}`;
         // Bring the 'todo-clock' id here to display the time
         document.getElementById('todo-clock').innerText = timeString;
 }
