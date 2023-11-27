@@ -1,6 +1,21 @@
 #todo-clock {
-    font-size: 4.20rem;
-    font-weight: 200;
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+
+#todo-list {
+    background-color: #c2eeee;
+    color: #202020;
+    padding: 2.5rem;
+}
+
+#todo-input, #add-todo {
+    padding: 1rem;
+}
+
+.todo-container {
+    display: grid;
+    grid-template-rows: 2fr auto;
 }
 
 body {
