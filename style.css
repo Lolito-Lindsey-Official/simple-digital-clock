@@ -6,7 +6,10 @@
 #todo-list {
     background-color: #c2eeee;
     color: #202020;
-    padding: 2.5rem;
+    padding: 1.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #todo-input, #add-todo {
