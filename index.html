@@ -9,10 +9,23 @@
 </head>
 <body>
      <!--This is for the clock and the to-do list -->
-    <div class = "todo-container">
+    <div class = "todo-container container-fluid">
         <!--Centers the clock-->
-        <div id = "todo-clock" class = "text-center my-4 text-info"></div>
-        <div id = "todo-list"></div>
+        <div id = "todo-clock" class = "text-center my-4 text-light"></div>
+
+        <!--mt 2 and mt 4 adds styling to the margin-top-->
+        <div id = "todo-list" class = "mt-2">
+            <!--using "form control" as class allows Bootstrap to add consistency to it's padding and border-->
+            <h1 class = "text-center">And here is a to-do list!</h1>
+            <input type = "text" id ="todo-input" class = "form-control" placeholder="Please enter a new task">
+            
+            <!--Adds Bootstrap button features-->
+                <button id = "add-todo" type = "button" class = "btn btn-primary btn-block mt-2">Add Task Here</button>
+
+            <ul id = "todo-items" class = "list-unstyled mt-5">
+                    <!--New task items will go here-->
+            </ul>
+        </div>
     </div>
     
     <!--Script.js here-->
