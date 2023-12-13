@@ -4,16 +4,18 @@
 }
 
 #todo-list {
-    background-color: #c2eeee;
-    color: #202020;
+    color: #fff;
     padding: 1.5rem;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #todo-input, #add-todo {
     padding: 1rem;
+}
+
+#todo-items {
+    background-color: silver;
 }
 
 .todo-container {
