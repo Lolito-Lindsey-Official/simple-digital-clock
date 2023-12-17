@@ -5,29 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>To-Do-List</title>
+    <title>Simple Digital Clock</title>
 </head>
 <body>
-     <!--This is for the clock and the to-do list -->
-    <div class = "todo-container container-fluid">
+    <div class = "clock-container container-fluid">
         <!--Centers the clock-->
-        <div id = "todo-clock" class = "text-center text-light"></div>
-
-        <!--mt 2 and mt 4 adds styling to the margin-top-->
-        <div id = "todo-list" class = "mt-3">
-            <!--using "form control" as class allows Bootstrap to add consistency to it's padding and border-->
-            <input type = "text" id ="todo-input" class = "form-control mt-4" placeholder="Please enter a new task">
-
-            <!--Adds Bootstrap button features-->
-            <button id = "add-todo" type = "button" class = "btn btn-primary btn-block mt-3">Add Task Here</button>
-
-            <ul id = "todo-items" class = "list-unstyled p-3 mt-5">
-                    <!--New task items will go here-->
-            </ul>
-        </div>
+        <h1 id = "display-clock" class = "text-center display-5"></h1>
     </div>
-    
-    <!--Script.js here-->
+
     <script src ="script.js"></script>
 </body>
 </html>
