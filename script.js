@@ -9,31 +9,21 @@ function cycleClock() {
         // Make a string to display the HH:MM:SS model
         const timeString = `The current time is:  ${hourTime}:${minuteTime}:${secondTime}`;
         // Bring the 'todo-clock' id here to display the time
-        document.getElementById('todo-clock').innerText = timeString;
+        document.getElementById('display-clock').innerText = timeString;
+
+        // Change the background color for each color of the day
+        if (hourTime >= 0 && hourTime < 6) {
+                document.body.style.backgroundColor = "#202020";
+                document.getElementById('display-clock').style.color = "#FFFFFF";
+        } else if (hourTime >= 6 && hourTime < 18) {
+                document.body.style.backgroundColor = "#a4e0e7"; // Light blue color
+                document.getElementById('display-clock').style.color = "#202020";
+        } else {
+                document.body.style.backgroundColor = "#03045e"; // Dark blue color
+                document.getElementById('display-clock').style.color = "#F4F4F4";
+        }
 }
 
 // 1000ms = 1 second
 setInterval(cycleClock, 1000);
-
-// When the user clicks on "Add New Task", get the button id to add the task
-const addTask = document.getElementById('add-todo');
-
-addTask.addEventListener('click', function() {
-        const inputField = document.getElementById('todo-input');
-        const makeNewTask =inputField.value;
-
-        if (makeNewTask.trim() !== ' ') {
-                const listItem = document.createElement('li');
-                // Connects the created element with the input field, adds new task to the list
-                listItem.innerText = makeNewTask;
-                /* 
-                        adds a new task = adds a node to the end of the list of children of a specified parent node
-
-                        node = listItem;
-                        parent node = todo-items;
-
-                        Reference: https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
-                */
-                document.getElementById('todo-items').appendChild(listItem);
-        }
-})
+cycleClock();
