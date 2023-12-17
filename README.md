@@ -1,4 +1,4 @@
-# to-do-list-with-clock
+# simple-digital-clock
 
 This project contains a real-time digital clock.
 
