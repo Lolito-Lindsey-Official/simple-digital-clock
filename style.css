@@ -1,13 +1,19 @@
 .clock-container {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
-}
 
-#display-clock {
-    min-width: 400px;
-    /* Center vertically and horizontally */
+    background-color: silver;
+
+    width: auto;
+    height: auto;
+    padding: 10px;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#display-clock {
+    min-width: 300px;
 }
